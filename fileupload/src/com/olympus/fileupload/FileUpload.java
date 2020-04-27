@@ -90,10 +90,13 @@ private final static Logger LOGGER = Logger.getLogger(FileUpload.class.getCanoni
     					String value = item.getString();
     					
     					if (name.equals("id")) {
+    						request.setAttribute("id", value);
     						//System.out.println("***%%%*** FIELD:" + name + "-- Value:" + value + "--");
     					} else if ( name.equals("startDate")) {
+    						request.setAttribute("startDate", value);
     						//System.out.println("***%%%*** FIELD:" + name + "-- Value:" + value + "--");
     					} else if ( name.equals("hiddenField")) {
+    						request.setAttribute("hiddenField", value);
     						//System.out.println("***%%%*** FIELD:" + name + "-- Value:" + value + "--");
     					} 	
                        //System.out.println("***^^^*** Field:" + name + "-- Value:" + value + "-- FN=" + fileName + "-- FP=" + uploadPath);

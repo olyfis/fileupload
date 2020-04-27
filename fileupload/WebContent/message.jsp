@@ -9,7 +9,10 @@
 </head>
 <body>
     <center>
-        <h2>${message}</h2>
+        <h5>${message}</h5>
+         <h5>${startDate}</h5>
+          <h5>${id}</h5>
+        
     </center>
 </body>
 </html>
